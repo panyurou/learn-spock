@@ -1,6 +1,5 @@
 plugins {
     id 'groovy'
-    id 'java'
 }
 
 group 'org.example'
@@ -11,9 +10,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.spockframework:spock-core:2.0-M4-groovy-3.0'
+    testImplementation 'org.codehaus.groovy:groovy-all:3.0.5'
 }
 
 test {
